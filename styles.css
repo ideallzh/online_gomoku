@@ -1,1 +1,54 @@
- 
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    gap: 1px;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #8B4513;
+    width: fit-content;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #FFFACD;
+    position: relative;
+    cursor: pointer;
+}
+
+.stone {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+    border: 1px solid #000;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#reset {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+} 
